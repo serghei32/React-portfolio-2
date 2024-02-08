@@ -14,7 +14,6 @@ export const Skills = () => {
         <Skill/>
         <Skill/>
         <Skill/>
-        <Skill/>
       </FlexWrapper>
     </StyledSkills>
   )
@@ -23,5 +22,5 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
 background-color:yellow ;
-  border: 1px solid black;
+min-height: 100VH;
 `
