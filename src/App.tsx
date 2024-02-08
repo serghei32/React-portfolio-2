@@ -12,6 +12,8 @@ function App() {
       <Skills/>
       <Skills/>
       <Skills/>
+      <Skills/>
+      <Skills/>
     </div>
   );
 }
