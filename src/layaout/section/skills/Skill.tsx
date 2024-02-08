@@ -15,11 +15,13 @@ export const Skill = () => {
       </SkillText>
     </StyledSkill>
   );
+
 };
 
 
 const StyledSkill = styled.div`
-
+  border: 1px solid black;
+  background-color: red;
 `
 const SkillsTitle = styled.h3`
 
