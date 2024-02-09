@@ -7,21 +7,41 @@ import {Skill} from "./Skill";
 
 export const Skills = () => {
   return (
-
     <StyledSkills>
       <SectionTitle>My Skills</SectionTitle>
-      <FlexWrapper >
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
+      <FlexWrapper wrap={"wrap"}>
+        <Skill title={'html'}
+               iconIdd={'codeSvg'}
+               text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+
+        <Skill title={'css3'}
+               iconIdd={'css'}
+               text={"xLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+        <Skill title={'web design'}
+               iconIdd={'figma'}
+               text={" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+        <Skill title={'react'}
+               iconIdd={'react'}
+               text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim "}/>
+        <Skill title={'Styled componend'}
+               iconIdd={'stComponent'}
+               text={" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+        <Skill title={'Typescript'}
+               iconIdd={'typeScript'}
+               text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"}/>
+
       </FlexWrapper>
     </StyledSkills>
   )
     ;
 };
 
+
 const StyledSkills = styled.section`
-background-color:yellow ;
-min-height: 100VH;
+  background-color: #ffe5e4;
+  min-height: 100vh;
+
+
 `
+
+

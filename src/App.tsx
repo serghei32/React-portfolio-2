@@ -10,8 +10,6 @@ function App() {
       <Header/>
       <Main/>
       <Skills/>
-      <Skills/>
-      <Skills/>
 
     </div>
   );

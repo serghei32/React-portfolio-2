@@ -6,13 +6,13 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 export const Main = () => {
   return (
     <StyledMain>
-      <FlexWrapper align={'center'} justify={'space-around'}>
+      <FlexWrapper justify={"space-between"} align={'center'}>
         <div>
           <span>Hi There</span>
           <span> Serghei Sevciuc</span>
           <MainTitle>Web developer</MainTitle>
         </div>
-        <Photo src={photo} alt=""/>
+        <Photo src={photo} alt="foto"/>
       </FlexWrapper>
     </StyledMain>
   );
@@ -21,7 +21,7 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   min-height: 100vh;
-  background-color: yellow;
+  background-color: #caaeb3;
 `
 
 const Photo = styled.img`
