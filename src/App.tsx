@@ -7,6 +7,7 @@ import {Works} from "./layaout/section/works/Works";
 import {Testimony} from "./layaout/section/testimony/Testimony";
 import {Contact} from "./layaout/section/contact/Contact";
 import {Slogan} from "./layaout/section/slogan/Slogan";
+import {Footer} from "./layaout/footer/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Testimony/>
       <Contact/>
       <Slogan/>
+      <Footer/>
     </div>
   );
 }
