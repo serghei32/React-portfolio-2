@@ -23,8 +23,9 @@ export const StyledMenu = styled.nav`
     display: flex;
     gap: 30px;
     list-style: none;
+   
   }
 `
 
-export const headerMenu = ["Home", "Skills", "Works", "Testimony", "Contacts"]
+
 export const worksItems = ["All", "Landing Page", "React", "Spa"]

@@ -1,20 +1,30 @@
 import React from 'react';
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
-import {Menu, headerMenu} from "../../components/menu/Menu";
-
+import {Container} from "../../components/Container";
+import {FlexWrapper} from "../../components/FlexWrapper";
+import {headerMenu, HeaderMenu} from "./headerMenu/HeaderMenu";
 
 
 export const Header = () => {
   return (
     <StyledHeader>
-      <Logo/>
-      <Menu menuItems={headerMenu}/>
+      <Container>
+        <FlexWrapper justify={"space-between"} align={"center"}>
+          <Logo/>
+          <HeaderMenu menu={headerMenu}/>
+        </FlexWrapper>
+      </Container>
     </StyledHeader>
   );
 };
 
 
 const StyledHeader = styled.header`
-  background-color: green;
+  background-color: rgba(31, 31, 32, 0.9);
+  padding: 20px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
 `
