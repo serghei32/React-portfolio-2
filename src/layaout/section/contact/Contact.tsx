@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
+import {StyledBtn} from "../../../components/StyledBtn";
 
 export const Contact = () => {
   return (
@@ -37,6 +38,3 @@ width: 100%;
 `
 
 
-const StyledBtn = styled.button`
-  background-color: yellow;
-`

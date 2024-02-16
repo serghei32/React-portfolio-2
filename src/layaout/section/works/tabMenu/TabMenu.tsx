@@ -1,16 +1,17 @@
 import React from 'react';
 import styled from "styled-components";
+import {ListLink} from "../../../../components/ListLink";
 
 
-export const Menu = (props: {menuItems: Array<string> }) => {
+export const TabMenu = (props: { menuItems: Array<string> }) => {
   return (
     <StyledMenu>
 
       <ul>
         {props.menuItems.map((item, index) => {
-          return <li key={index}>
-            <a href="#">{item}</a>
-          </li>
+          return <ListItem key={index}>
+            <ListLink href="#">{item}</ListLink>
+          </ListItem>
         })}
       </ul>
 
@@ -19,16 +20,18 @@ export const Menu = (props: {menuItems: Array<string> }) => {
 };
 
 export const StyledMenu = styled.nav`
-  margin: 0 auto;
-  
   ul {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    justify-content: center;
     list-style: none;
-   
-   
   }
 `
+const ListItem = styled.li`
+ 
+`
+
+
 
 
 export const worksItems = ["All", "Landing Page", "React", "Spa"]

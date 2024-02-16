@@ -36,14 +36,13 @@ const StyledSkill = styled.div`
 `
 const SkillsTitle = styled.h3`
   margin-bottom: 15px;
-  font-family: "Josefin Sans";
-  font-weight: 400;
+  text-transform: uppercase;
+
 
 `
 const SkillText = styled.p`
   text-align: center;
-  font-size: 14px;
-  line-height: 1.4;
+ 
 `
 
 

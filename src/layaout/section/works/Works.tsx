@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {Menu, worksItems} from "../../../components/menu/Menu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import socialImg from "./../../../assets/images/project1.webp"
 import timerImg from "./../../../assets/images/project2.webp"
 import {Container} from "../../../components/Container";
+import {TabMenu, worksItems} from "./tabMenu/TabMenu";
 
 export const Works = () => {
   return (
@@ -15,7 +15,7 @@ export const Works = () => {
 
       <Container>
         <SectionTitle>My Works</SectionTitle>
-        <Menu menuItems={worksItems}/>
+        <TabMenu menuItems={worksItems}/>
         <FlexWrapper justify={"space-between"}>
 
           <Work path={socialImg}
@@ -37,6 +37,5 @@ export const Works = () => {
 
 
 const StyledWorks = styled.section`
-  //min-height: 100vh;
-  background-color: lightskyblue;
+ 
 `

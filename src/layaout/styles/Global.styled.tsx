@@ -1,5 +1,6 @@
 import {createGlobalStyle} from "styled-components";
 import {theme} from "./Theme";
+import {throws} from "assert";
 
 
 export const GlobalStyled = createGlobalStyle`
@@ -25,17 +26,17 @@ export const GlobalStyled = createGlobalStyle`
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
   }
-
   a {
+    color: ${theme.colors.font};
     text-decoration: none;
   }
-
   ul {
     list-style: none;
   }
 
   button {
     background-color: unset;
+    cursor: pointer;
   }
 
   section:nth-of-type(odd) {
@@ -51,7 +52,15 @@ section{
 }
 
 p{
-  
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;  
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 `
 
