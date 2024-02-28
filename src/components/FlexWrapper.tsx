@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../layaout/styles/Theme";
 
 
 type FlexWrapperPropsType = {
@@ -15,4 +16,9 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   flex-wrap: ${props => props.wrap || "nowrap"};
   height: 100%;
   //border: 1px solid green;
+
+  @media ${theme.media.mobile} {
+    justify-content: center;
+    align-items: center;
+  }
 `

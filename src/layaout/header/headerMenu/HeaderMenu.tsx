@@ -29,6 +29,10 @@ export const StyledHeaderMenu = styled.nav`
     gap: 30px;
     list-style: none;
   }
+  
+  @media ${theme.media.tablet} {
+    display: none;
+  }
 `
 
 

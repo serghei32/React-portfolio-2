@@ -42,11 +42,11 @@ const SkillsTitle = styled.h3`
 `
 const SkillText = styled.p`
   text-align: center;
- 
 `
 
 
-const WraperIcon = styled.div`
+ export const WraperIcon = styled.div`
+   border: 1px solid red;
   position: relative;
   z-index: 0;
   margin-bottom: 70px;
