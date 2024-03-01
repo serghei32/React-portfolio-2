@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {Icon} from '../../../components/icon/Icon';
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import * as Colorette from "colorette";
+import {theme} from "../../styles/Theme";
 
 
 type SkillPropsType = {
@@ -28,9 +29,15 @@ export const Skill = (props: SkillPropsType) => {
 
 
 const StyledSkill = styled.div`
-  width: 380px;
+  width: 330px;
   padding: 62px 20px 42px;
   border: 1px solid red;
+  flex-grow: 1;
+
+@media ${theme.media.mobile} {
+  padding: 62px 0px 42px;
+}
+
 
 
 `
@@ -45,8 +52,8 @@ const SkillText = styled.p`
 `
 
 
- export const WraperIcon = styled.div`
-   border: 1px solid red;
+export const WraperIcon = styled.div`
+  border: 1px solid red;
   position: relative;
   z-index: 0;
   margin-bottom: 70px;
@@ -60,9 +67,9 @@ const SkillText = styled.p`
     background-color: rgba(255, 255, 255, 0.1);
     top: 50%;
     left: 50%;
-    transform: rotate(-45deg) translate(-50%,-50%);
+    transform: rotate(-45deg) translate(-50%, -50%);
     transform-origin: top left;
-  
+
   }
 
 `

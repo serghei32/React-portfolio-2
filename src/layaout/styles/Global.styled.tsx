@@ -1,6 +1,5 @@
 import {createGlobalStyle} from "styled-components";
 import {theme} from "./Theme";
-import {throws} from "assert";
 
 
 export const GlobalStyled = createGlobalStyle`
@@ -11,6 +10,7 @@ export const GlobalStyled = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+
   body {
     margin: 0;
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -26,10 +26,12 @@ export const GlobalStyled = createGlobalStyle`
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
   }
+
   a {
     color: ${theme.colors.font};
     text-decoration: none;
   }
+
   ul {
     list-style: none;
   }
@@ -47,20 +49,28 @@ export const GlobalStyled = createGlobalStyle`
     background-color: ${theme.colors.secondaryBg};
   }
 
-section{
-  padding: 100px 0;
-}
+  section {
+    padding: 100px 0;
 
-p{
-  font-size: 14px;
-  line-height: 1.4;
-}
+    @media ${theme.media.mobile}{
+      padding: 80px 0;
+      background-color: red;
+    }
+  }
 
-h3 {
-  font-family: "Josefin Sans", sans-serif;  
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
+  
+  
+  
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
 `
 
