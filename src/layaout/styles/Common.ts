@@ -10,12 +10,15 @@ type FontPropsType = {
 }
 
 
-export const font = ({family, weigth, color, lineHeight, Fmin, Fmax}: FontPropsType) => `
+export const font = ({family, weigth, color, lineHeight, Fmin, Fmax}: FontPropsType) => {
+  // console.log('aaa', Fmax, Fmin)
+  return `
 line-height:${lineHeight || 1.2};
 font-weight:${weigth || 400};
 color:${color || theme.colors.font};
 font-family: ${family || "Poppins"};
 font-size: calc( (100vw - 360px)/(1440 - 360) * (${Fmax} - ${Fmin}) + ${Fmin}px );
 `
+}
 
 

@@ -7,7 +7,6 @@ export const SectionTitle = styled.h2`
   text-align: center;
   letter-spacing: 5px;
   position: relative;
-  
   margin-bottom: 90px;
 
   &::before {
@@ -20,10 +19,11 @@ export const SectionTitle = styled.h2`
     transform: translateX(-50%);
     bottom: -30px;
     position: absolute;
-    
-    @media ${theme.media.mobile} {
-      bottom: -24px;
-    }
-    
+  }
+
+  @media ${theme.media.mobile} {
+    bottom: -24px;
+    ${font({ Fmax:30, Fmin:25})}
+    font-weight: 600;
   }
 `
